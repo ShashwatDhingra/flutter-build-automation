@@ -1,103 +1,147 @@
-Flutter Build & Share Automation 🚀
+---
 
-Automate the entire Flutter build → upload → share workflow with a single command.
+# Flutter Build & Share Automation 🚀
 
-This script builds your Flutter app (Android or iOS), uploads the generated artifact, and instantly returns a shareable installation link for testers.
+Automate the entire **Flutter build → upload → share** workflow with a single command.
 
-No more manually building APK/IPA, uploading it, and then sharing links.
+This script builds your Flutter app (**Android or iOS**), uploads the generated artifact, and instantly returns a **shareable installation link for testers**.
 
-✨ Features
+No more manually building APK/IPA, uploading it, and sharing links.
 
-• Build Android APK automatically
-• Build iOS IPA automatically
-• Upload build to Loadly
-• Generate instant install link for testers
-• Works with one command
-• Lightweight shell script (no CI setup required)
+---
 
-⚙️ How It Works
+# ✨ Features
+
+* Build **Android APK** automatically
+* Build **iOS IPA** automatically
+* Upload build to **Loadly**
+* Generate **instant install link for testers**
+* Works with **one command**
+* Lightweight shell script (**no CI setup required**)
+
+---
+
+# ⚙️ How It Works
 
 The script performs the following steps:
 
-Detects the platform flag (--a or --i)
-Builds the Flutter project
-Locates the generated build artifact
-Uploads it to the distribution service
-Extracts and prints the install link
+1. Detects the platform flag (`--a` or `--i`)
+2. Builds the Flutter project
+3. Locates the generated build artifact
+4. Uploads it to the distribution service
+5. Extracts and prints the install link
 
-Example output:
+### Example Output
 
+```
 📦 Building Android APK...
 🚀 Uploading to Loadly...
 📩 Response received...
 ✅ Upload successful!
 🔗 Install Link: https://loadly.io/abc123
-📂 Project Structure
+```
+
+---
+
+# 📂 Project Structure
+
+```
 flutter-build-share/
 │
 ├── build.sh
 ├── README.md
 └── ios/
     └── ExportOptions.plist
-🛠 Requirements
+```
+
+---
+
+# 🛠 Requirements
 
 Make sure the following are installed:
 
-• Flutter SDK
-• Xcode (for iOS builds)
-• macOS (required for IPA build)
-• curl
+* Flutter SDK
+* Xcode (for iOS builds)
+* macOS (required for IPA build)
+* curl
 
-🔑 Setup
+---
 
-Set your API key as an environment variable.
+# 🔑 Setup
 
+Set your API key as an environment variable:
+
+```
 export LOADLY_API_KEY=your_api_key_here
+```
 
 This avoids exposing credentials inside the script.
 
-🚀 Usage
+---
+
+# 🚀 Usage
 
 Make the script executable:
 
+```
 chmod +x build.sh
-Build Android
+```
+
+### Build Android
+
+```
 ./build.sh --a
-Build iOS
+```
+
+### Build iOS
+
+```
 ./build.sh --i
+```
 
-After completion, the script prints a shareable install link.
+After completion, the script prints a **shareable install link**.
 
-📱 Example Workflow
+---
+
+# 📱 Example Workflow
 
 Instead of doing this manually:
 
-Run Flutter build
-Find the APK/IPA
-Upload to a distribution platform
-Copy installation link
-Share with testers
+1. Run Flutter build
+2. Find the APK/IPA
+3. Upload to a distribution platform
+4. Copy installation link
+5. Share with testers
 
 You can now simply run:
 
+```
 ./build.sh --a
+```
 
 and get the install link instantly.
 
-💡 Why I Built This
+---
 
-While working on Flutter apps, I noticed the build and distribution process during testing cycles was repetitive.
+# 💡 Why I Built This
 
-This small automation script reduces the process to a single command, saving time during development and QA.
+While working on Flutter apps, I noticed the **build and distribution process during testing cycles was repetitive**.
 
-🤝 Contributions
+This small automation script reduces the process to **a single command**, saving time during development and QA.
+
+---
+
+# 🤝 Contributions
 
 Contributions, suggestions, and improvements are welcome.
 
-If you find this helpful, feel free to star the repository ⭐.
+If you find this helpful, feel free to **star the repository ⭐**.
 
-🧑‍💻 Author
+---
 
-Shashwat Dhingra
+# 🧑‍💻 Author
 
+**Shashwat Dhingra**
 Flutter Developer | Mobile App Developer
+
+---
