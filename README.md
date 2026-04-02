@@ -50,7 +50,7 @@ flutter-build-share/
 │
 ├── build.sh
 ├── README.md
-└── ios/
+└── iOS/
     └── ExportOptions.plist
 ```
 
@@ -142,6 +142,6 @@ If you find this helpful, feel free to **star the repository ⭐**.
 # 🧑‍💻 Author
 
 **Shashwat Dhingra**
-Flutter Developer | Mobile App Developer
+Mobile App Developer
 
 ---
